@@ -24,7 +24,7 @@ const PageLayout = () => {
   return (
     <div className="flex h-screen flex-col">
       <Header />
-      <div className="flex-1 bg-body-background bg-[url('./assets/body-background.svg')] bg-no-repeat">
+      <div className="flex-1 bg-body-background bg-[url('./assets/body-background.svg')] bg-no-repeat dark:bg-gray-800">
         <Outlet />
       </div>
     </div>

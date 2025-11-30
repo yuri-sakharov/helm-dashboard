@@ -1,3 +1,5 @@
+import { DarkThemeToggle } from "flowbite-react";
+
 import { useLocation } from "react-router";
 import LogoHeader from "../assets/logo-header.svg";
 import DropDown from "../components/common/DropDown";
@@ -58,8 +60,9 @@ export default function Header() {
     }`;
 
   return (
-    <div className="custom-shadow flex h-16 items-center justify-between bg-white">
+    <div className="custom-shadow flex h-16 items-center justify-between bg-white dark:bg-gray-800">
       <div className="flex h-16 min-w-fit items-center gap-6">
+        <DarkThemeToggle />
         <LinkWithSearchParams to={"/installed"} exclude={["tab"]}>
           <img
             src={LogoHeader}
